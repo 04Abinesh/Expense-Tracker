@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExpenseTracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Expense Tracker</h1>
+    <div class="input-section">
+      <div class="category">
+        <label for="Category-selection">Category</label>
+        <select id="Category-selection" class="input">
+          <option value="">Select a category</option>
+          <option value="Foods and Beverages">Foods and Beverages</option>
+          <option value="Rent">Rent</option>
+          <option value="Clothes">Clothes</option>
+          <option value="Entertainment">Entertainment</option>
+        </select>
+      </div>
+      <div class="amount">
+        <label for="amount-input">Amount</label>
+        <input type="number" id="amount-input" class="input" />
+      </div>
+      <div class="date">
+        <label for="date-input">Date:</label>
+        <input type="date" id="date-input" class="input" />
+      </div>
+      <button id="add-btn">Add</button>
+    </div>
+    <div class="Expense-list">
+      <h2>Expense list</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="expense-tabel-body"></tbody>
+        <tfoot>
+          <tr>
+            <td>Total</td>
+            <td id="total-amount"></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

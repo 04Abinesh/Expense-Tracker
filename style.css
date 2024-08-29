@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.input {
+  margin-left: 10px;
+}
+
+.input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.input-section button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.input-section input[type="number"],
+.input-section input[type="date"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.Expense-list {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+tfoot td {
+  font-weight: bold;
+}
+#add-btn {
+  padding: 10px 10px;
+  margin-right: 15px;
+}
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.category {
+  margin-left: 10px;
+}
+.input-section select {
+  padding: 5px; /* Padding for the options */
+}
